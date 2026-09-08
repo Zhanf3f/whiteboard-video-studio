@@ -1,0 +1,44 @@
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 临时输出（出片管线写在 /tmp/onetake_cache，本地如果切到仓库内就跑也忽略）
+/tmp/
+*.tmp
+
+# 渲染产物（不要把成片 MP4 推上仓库）
+*.mp4
+*.wav
+*.mp3
+frames/
+frames_seq/
+out/
+dist/
+
+# 凭据 / 私密配置
+.env
+.env.local
+*.key
+*.pem
+config.local.*
+
+# IDE
+.idea/
+.vscode/
